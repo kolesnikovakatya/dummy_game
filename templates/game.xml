@@ -1,0 +1,10 @@
+<fest:template xmlns:fest="http://fest.mail.ru"
+    context_name="json">
+    <div>
+        <h1>Epic Game</h1>
+        <ul>
+            <li><a href="#" class="back">Back</a></li>
+        </ul>
+    </div>
+</fest:template>
+        
