@@ -1,3 +1,4 @@
+
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
     <div>
@@ -7,4 +8,3 @@
         </ul>
     </div>
 </fest:template>
-        

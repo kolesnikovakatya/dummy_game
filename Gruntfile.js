@@ -38,6 +38,27 @@ module.exports = function (grunt) {
                     cwd: 'templates', /*исходная директория*/
                     src: '*.xml', /* имена шаблонов */
                     dest: 'public/js/tmpl' /* результирующая директория */
+
+                    livereload: true
+                }
+            }
+        },
+        connect: {
+            server: {
+                options: {
+                    livereload: true,
+                    port: 8000,
+                    base: 'public'
+                }
+            }
+        },
+        fest: {
+            templates: {
+                files: [{
+                    expand: true,
+                    cwd: 'templates',
+                    src: '*.xml',
+                    dest: 'public/js/tmpl'
                 }],
                 options: {
                     template: function (data) {
@@ -54,7 +75,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch')
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-fest');
-
     grunt.registerTask('default', ['connect', 'watch']);
+
 };
-        
