@@ -32,27 +32,6 @@ module.exports = function (grunt) {
     	}, /* grunt-contrib-connect */
 
         fest: {
-            templates: { /* Подзадача */
-                files: [{
-                    expand: true,
-                    cwd: 'templates', /*исходная директория*/
-                    src: '*.xml', /* имена шаблонов */
-                    dest: 'public/js/tmpl' /* результирующая директория */
-
-                    livereload: true
-                }
-            }
-        },
-        connect: {
-            server: {
-                options: {
-                    livereload: true,
-                    port: 8000,
-                    base: 'public'
-                }
-            }
-        },
-        fest: {
             templates: {
                 files: [{
                     expand: true,
